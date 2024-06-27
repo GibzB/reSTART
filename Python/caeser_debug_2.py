@@ -22,7 +22,7 @@ def getCipherKey():
 def encryptMessage(message, cipherKey, alphabet):
     encryptedMessage = ""
     uppercaseMessage = ""
-    uppercaseMessage = message
+    uppercaseMessage = message # The code only encrypts upper case letters
     for currentCharacter in uppercaseMessage:
         position = alphabet.find(currentCharacter)
         newPosition = position + int(cipherKey)
