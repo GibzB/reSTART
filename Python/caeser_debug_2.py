@@ -16,7 +16,7 @@ def getMessage():
 # Get a cipher key
 def getCipherKey():
     shiftAmount = input("Please enter a key (whole number from 1-25): ")
-    return int(shiftAmount)
+    return shiftAmount
 
 # Encrypt message
 def encryptMessage(message, cipherKey, alphabet):
@@ -34,7 +34,7 @@ def encryptMessage(message, cipherKey, alphabet):
 
 # Decrypt message
 def decryptMessage(message, cipherKey, alphabet):
-    decryptKey = -1 * cipherKey
+    decryptKey = -1 * int(cipherKey)
     return encryptMessage(message, decryptKey, alphabet)
 
 # Main program logic
