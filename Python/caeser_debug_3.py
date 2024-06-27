@@ -39,7 +39,7 @@ def decryptMessage(message, cipherKey, alphabet):
 
 # Main program logic
 def runCaesarCipherProgram():
-    myAlphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    myAlphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
     print(f'Alphabet: {myAlphabet}')
     myAlphabet2 = getDoubleAlphabet(myAlphabet)
     print(f'Alphabet2: {myAlphabet2}')
@@ -50,7 +50,7 @@ def runCaesarCipherProgram():
     myEncryptedMessage = encryptMessage(myMessage, myCipherKey, myAlphabet2)
     print(f'Encrypted Message: {myEncryptedMessage}')
     myDecryptedMessage = decryptMessage(myEncryptedMessage, myCipherKey, myAlphabet2)
-    print(f'Decrypted Message: {myEncryptedMessage}') # prints out encrypted message
+    print(f'Decrypted Message: {myDecryptedMessage}') # prints out encrypted message
 
 # Main logic
 runCaesarCipherProgram()
