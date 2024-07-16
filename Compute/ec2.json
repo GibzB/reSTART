@@ -1,0 +1,2 @@
+ec2 describe-instances
+{ "Reservations": [{"Groups":[],"Instances":[{"ImageId":"ami-423bec20","InstanceId": "i-068035fce1e9abcc9","InstanceType": "m5.large","KeyName": "mykeypair","LaunchTime": "2019-06-15T 11:55:16.000Z","Placement": {"AvailabilityZone": "us-west-2a"}"State":{"Code": 16,"Name": "running"},"PublicIPAddress": "54.252.186.255","PublicDnsName": "ec2-54-252-186-255.us-west-2.compute.amazonaws.com","PrivateIPAddress": "10.0.50.14",
